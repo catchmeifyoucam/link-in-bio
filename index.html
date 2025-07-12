@@ -1,17 +1,85 @@
 <!DOCTYPE html> 
 <html> 
   <head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
     <style> 
+    html { 
+      height: 100%; 
+    }
+    body { 
+      min-height: 100%;
+      padding-top: 40px; 
+      padding-bottom: 40px;
+      background-color: #F0F0F0; 
+      font-family: 'Josefin Sans', sans-serif;
+      background: linear-gradient(180deg, #f3f1ea, #f4efe8, #f5eee7, #f6ece6, #f8eae5, #f8e9e6, #f9e7e7, #f9e5e8, #f8e4ea);
+
+    }
     * { border: 1px red dashed;} 
+    h1 { 
+      font-family: 'Josefin Sans', sans-serif; 
+      background-color: #F0F0F0; 
+      margin: 0; 
+      padding: 0; 
+      font-weight: bold;
+    }
+    .avatar-image 
+    { 
+      width: 128px; 
+      height: 128px; 
+    }
+    .images {
+      width: 48 px;
+      height: 48px;
+      object-fit: cover;
+    }
+    
+    .main-container { 
+      max-width: 640px; 
+      margin: 0 auto; 
+      text-align: center; 
+      padding: 20px; 
+      border-radius: 10px; 
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    }
+
     </style>
   </head>
   <body>
   <div class="main-container" This is the main container>
-    <div class="image-row" This is the image row></div>
-    <div class="name-row" This is the Name row></div>
-    <div class="social-icons-row" This is the Name row></div>
-    <div class="links-row" This is the Name row></div>
+   
+    <div class="image-row" This is the image row>
+      <img class="avatar-image" src="images/profilepic2.png" alt="Camille Ruiz-Funes headshot with color background"/>
+    </div>
+
+    <div class="name-row" This is the Name row>
+      <h1>camille ruiz-funes</h1>
+    </div>
+    <div class="social-icons-row" This is the social row>
+       <a href="https://www.instagram.com/__misscamille__/" target="_blank">  
+        <img src="images/Instagram2.png" alt="Navy circle with the word 'Instagram' written in bright pink text'" class="images"/> 
+      </a>
+      <a href="https://www.linkedin.com/in/camilleruizfunes/" target="_blank">
+      <img src="images/linkedin2.png" alt="Navy circle with the word 'LinkedIn' written in bright pink text" class="images"/>
+      </a>
+      <a href="https://www.camilleruizfunes.com/" target="_blank">
+      <img src="images/portfolio2.png" alt="Navy circle with the word 'Portfolio' written in bright pink text" class="images" />
+      </a>
+      
+    </div>
+    <div class="links-row" This is the additional links row>
+    <img src="images/bsf_logo_new_-small.webp" alt="Big Shoulders Fund Logo" class="images">
+      <a href="https://www.bigshouldersfund.org/" target="_blank">Big Shoulders Fund</a>
+    <img src="images/Logo_transparent.webp" alt="Lincoln Park Conservancy Logo" class="images">
+      <a href="https://lincolnparkconservancy.org/" target="_blank">Lincoln Park Conservancy</a>
+    <img src="images/6-1.jpg" alt="Winnetka Public Library Logo" class="images">
+      <a href="https://www.winnetkalibrary.org/" target="_blank">Winnetka Public Library</a>
+    </div>
   </div>
 
 
