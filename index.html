@@ -7,6 +7,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+
     <style> 
     html { 
       height: 100%; 
@@ -19,7 +23,8 @@
       background: linear-gradient(180deg, #f9f8f7, #f9f5f2, #faf2ee, #faefea, #fbebe7, #fce8e5, #fde4e3, #fee0e3, #fedde3);
 
     }
-    * { border: 1px red dashed;} 
+   /* { border: 1px red dashed;}*/ 
+
     h1 { 
       font-family: 'Josefin Sans', sans-serif; 
       margin: 0; 
@@ -40,7 +45,7 @@
       text-align: center; 
       padding: 20px; 
       border-radius: 10px; 
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+     /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
     }
 
     .name-row { 
@@ -48,42 +53,40 @@
     }
 
     .social-icons-row { 
-      margin-bottom: 10px;
+      margin-bottom: 30px;
       display: flex;
-      justify-content: space-around; 
+      justify-content: space-between; 
     }
     .social_images {
       width: 100px;
       height: 100px;
       object-fit: cover;
     }
-    
-    .hrect_images {
-      width:100px; 
-      height: 50px;
-      object-fit: fill;
-    }
-
-    .vrect_images {
-      width:50px; 
-      height: 70px;
-      object-fit: fill;
-    } 
-
       .sq_images {
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: 60px;
         object-fit: cover;
+    
       }
+
     .item {
-      margin-bottom: 10px;
+      margin-bottom: 30px;
+      display: flex;
+      background-color: #FFFFFF;
+      border-radius: 1000px;
       display: flex;
       align-items: center;
     }
+    
 
     .link-text {
       text-align: center;
       flex-grow: 1;
+      font-family: Playfair, serif;
+      font-weight: 300;
+      font-size: 18px;
+      color: #022548;
+      text-decoration: none;
     }
     </style>
   </head>
@@ -118,18 +121,21 @@
     <div class="links-row" This is the additional links row>
 
       <div class="item">
-      <img src="images/bsf_logo_new_-small.webp" alt="Big Shoulders Fund Logo" class="hrect_images">
-      <a class="link-text" href="https://www.bigshouldersfund.org/" target="_blank"> Big Shoulders Fund
+        <a href="https://www.bigshouldersfund.org/" target="_blank">
+      <img src="images/bsf.png" alt="Big Shoulders Fund Logo" class="sq_images">
+      <a class="link-text" href="https://www.bigshouldersfund.org/" target="_blank"> Big Shoulders Fund </a>
       </a>
       </div>
 
     <div class="item">
-    <img src="images/Logo_transparent.webp" alt="Lincoln Park Conservancy Logo" class="vrect_images">
+      <a href="https://www.lincolnparkconservancy.org/" target="_blank">
+    <img src="images/lpc.png" alt="Lincoln Park Conservancy Logo" class="sq_images">
       <a class="link-text" href="https://lincolnparkconservancy.org/" target="_blank">Lincoln Park Conservancy</a>
       </div>
 
     <div class="item">
-    <img src="images/pt7ab8-j_400x400.jpg" alt="Winnetka Public Library Logo" class="sq_images">
+      <a href="https://www.winnetkalibrary.org/" target="_blank">
+    <img src="images/wpl.png" alt="Winnetka Public Library Logo" class="sq_images">
       <a class="link-text" href="https://www.winnetkalibrary.org/" target="_blank">Winnetka Public Library</a>
     </div>
 
